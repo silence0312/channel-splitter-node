@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>splitter</title>
+	<link rel="stylesheet"  href="public/css/index.css">
+	<script src="jquery-3.2.1.min.js"></script>
+	
+</head>
+<body>
+	<div class = "head">
+		<p class = "h-a">音乐可视化监听</p>
+	</div>
+	<div class = "aside">
+              
+               <p id = "info">选择歌曲</p>
+                  <span id = "fileIn">
+                      click me to select an audio file.
+                  </span>
+                  <input type = "file" id ="uploader"/>
+
+		            <p id = "info">音乐列表</p>        
+                <span id = "fileIn" onclick="a();">Rihanna-Diamonds.mp3</span><br>
+                <span id = "fileIn" onclick="b();">徐良&阿悄-红妆.mp3</span><br>
+                <span id = "fileIn" onclick="c();">徐良&李晟-I Will Be OK.mp3</span><br>
+                <span id = "fileIn" onclick="d();">徐良&孙羽幽-虐心.mp3</span><br>
+                <span id = "fileIn" onclick="e();">徐良&小凌-客官不可以.mp3</span><br>
+                <span id = "fileIn" onclick="f();">徐良&小凌-无颜女.mp3</span><br>
+                <span id = "fileIn" onclick="g();">徐良-后会无期.mp3</span><br>
+                <span id = "fileIn" onclick="h();">徐良-坏女孩.mp3</span><br>
+                <span id = "fileIn" onclick="i();">徐良-那时雨.mp3</span><br>
+                        
+                        
+                <audio id="music1" src="media/Rihanna-Diamonds.mp3" controls="controls" preload  hidden></audio>
+                <audio src="media/徐良&阿悄-红妆.mp3" controls="controls" preload id="music2" hidden></audio>
+                <audio src="media/徐良&李晟-I Will Be OK.mp3" controls="controls" preload id="music3" hidden></audio>
+                <audio src="media/徐良&孙羽幽-虐心.mp3" controls="controls" preload id="music4" hidden></audio>
+                <audio src="media/徐良&小凌-客官不可以.mp3" controls="controls" preload id="music5" hidden></audio>
+                <audio src="media/徐良&小凌-无颜女.mp3" controls="controls" preload id="music6" hidden></audio>
+                <audio src="media/徐良-后会无期.mp3" controls="controls" preload id="music7" hidden></audio>
+                <audio src="media/徐良-坏女孩.mp3" controls="controls" preload id="music8" hidden></audio>
+                <audio src="media/徐良-那时雨.mp3" controls="controls" preload id="music9" hidden></audio>          
+    </div>
+  
+        
+    <div id="body">                        
+         <canvas id="drawCanvas" style="border:1px solid;" width="700" height="300"></canvas>
+         <canvas id="can1" style="border:1px solid;" width="400" height="300"></canvas>
+         <canvas id="can2" style="border:1px solid;" width="400" height="300"></canvas>
+         <canvas id="can3" style="border:1px solid;" width="700" height="300"></canvas>
+         <canvas id="can4" style="border:1px solid;" width="400" height="300"></canvas>
+         <canvas id="can5" style="border:1px solid;" width="400" height="300"></canvas>
+    </div>
+
+
+
+   <script type="text/javascript" src = "public/js/splitter.js"></script>
+   <script type="text/javascript" src = "public/js/loader.js"></script>
+   <script type="text/javascript" src = "public/js/music.js"></script>
+   <script type="text/javascript" src = "routes/index.js"></script>
+   <script type="text/javascript" src = "public/js/music-1.js"></script>
+</body>
+</html>
